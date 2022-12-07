@@ -8,7 +8,7 @@ const currencies = ['hkd', 'usd', 'cny', 'eur']
 function App() {
   const [quotes, setQuotes] = useState({})
   useEffect(() => {
-    fetch('https://home.houyewei.com/fxrate').then(
+    fetch('https://houyewei.com/fxrate').then(
       data => {
         return data.json()
       }
